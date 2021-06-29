@@ -13,7 +13,7 @@ def send_sms_twilio(phone_no):
 
     message = client.messages \
                     .create(
-                        body="This is testing from twilio in django utility",
+                        body="This is send sms testing with twilio",
                         from_='+19708250719',
                         to= phone_no
                     )
