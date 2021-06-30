@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name="google_auth/index.html")),
     path('sms/',include('sms.urls')),
+    path('email/',include('email_verification.urls')),
     path('accounts/',include('allauth.urls'))
 ]

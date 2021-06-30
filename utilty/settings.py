@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'sms',
+    'email_verification',
     'django.contrib.sites',
     'google_auth',
     'allauth',
@@ -154,3 +156,9 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'baereferral001@gmail.com'
+EMAIL_HOST_PASSWORD = 'password@1234'
+CORS_ORIGIN_ALLOW_ALL = True
